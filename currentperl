@@ -1,0 +1,21 @@
+#!/bin/bash
+# RSP 2010-09-16
+
+# Currentperl - Copyright (c) 2010 Rafal Pocztarski
+# This program comes with ABSOLUTELY NO WARRANTY.
+# You may redistribute it under certain conditions.
+# See LICENSE for details.
+# Project home page: http://github.com/rsp/getperl
+
+perl="current stable version of perl"
+url="http://www.perl.org/get.html"
+ver=`(wget $url -O - || curl $url || (echo ERROR >&2; exit 1)) 2>/dev/null \
+| grep tar.gz | sed 's/.*perl-//;s/\.tar.*//'`
+if [ "$ver" == "" ]; then
+    echo "Cannot find the $perl" >&2
+    exit 1
+else
+    echo "The $perl is:" >&2
+    echo $ver
+fi
+

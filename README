@@ -4,7 +4,8 @@ This program comes with ABSOLUTELY NO WARRANTY.
 You may redistribute it under certain conditions.
 See LICENSE for details.
 
-Getperl downloads, configures, builds and tests perl.
+Currentperl displays the current stable version of perl.
+Getperl downloads, configures, builds and tests a given version of perl.
 Project home page: http://github.com/rsp/getperl
 
 Usage: getperl VERSION

@@ -6,7 +6,8 @@ echo "This program comes with ABSOLUTELY NO WARRANTY."
 echo "You may redistribute it under certain conditions."
 echo "See LICENSE for details."
 echo
-echo "Getperl downloads, configures, builds and tests perl."
+echo "Currentperl displays the current stable version of perl."
+echo "Getperl downloads, configures, builds and tests a given version of perl."
 echo "Project home page: http://github.com/rsp/getperl"
 echo
 if [ "$1" == "" ]; then
