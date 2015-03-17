@@ -10,7 +10,7 @@
 perl="current stable version of perl"
 url="http://www.perl.org/get.html"
 ver=`(wget $url -O - || curl $url || (echo ERROR >&2; exit 1)) 2>/dev/null \
-| grep tar.gz | sed 's/.*perl-//;s/\.tar.*//'`
+| grep tar.gz | sed 's/.*perl-//;s/\.tar.*//' | head -1`
 if [ "$ver" == "" ]; then
     echo "Cannot find the $perl" >&2
     exit 1
